@@ -20,7 +20,7 @@ pool:
 
 steps:
 
-- checkout: git://github.com/dotnet/runtime
+- checkout: github://dotnet/runtime
 
 - bash: |
     echo hello
