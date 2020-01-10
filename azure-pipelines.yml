@@ -1,0 +1,28 @@
+trigger: none  # we only trigger on PRs
+
+pr:
+  branches:
+    include:
+    - master
+  paths:
+    include:
+    - mono/*
+    - msvc/mono.vcxproj
+    - autogen.sh
+    - configure.ac
+    - Makefile.am
+    - acinclude.m4
+    - config.rpath
+    - winconfig.h
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+
+- checkout: git://github.com/dotnet/runtime
+
+- bash: |
+    echo hello
+    ls -la
+  displayName: Apply to target repo
