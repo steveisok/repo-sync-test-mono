@@ -25,7 +25,7 @@
 #include "mini.h"
 #include "mini-runtime.h"
 
-/* I made a delete and a change */
+/* I closed the PR and reopened it.  Does it kick? */
 
 #ifdef HAVE_UNISTD_H
 #  include <unistd.h>
